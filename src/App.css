@@ -37,21 +37,68 @@ button{
   color: white;
 }
 
+active{
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.inactive{
+  color: var(--primary1);
+  font-weight: 400;
+}
 /* header starts here */
+.header-top-strip a{
+  color: var(--primary1 );
+ 
+
+}
+
 .input-group button{
    background: transparent;
    font-size: 14px;
+   color: var(--search);
 }
 
 .nav-links a{
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--primary1);
 }
 
 .header-upper{
   background: var(--lighter2); 
 }
+
+.nav-links-nav a{
+  color:var(--search)
+}
+
+.social-icons a{
+  color:var(--search)
+}
+
+/*footer start*/
+
+footer{
+  background-color: var(--lighter2);
+}
+
+.pay img{
+  transition: 0.5s ease;
+
+}
+
+.pay img:hover{
+  transform: translateY(-8px);
+}
+
+
+.footer-details a{
+  color: var(--primary1);
+
+}
+
 
 
 

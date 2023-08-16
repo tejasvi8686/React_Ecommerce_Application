@@ -8,10 +8,12 @@ import { HiOutlineInbox } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
 
+
 const header = () => {
+ 
   return (
     <>
-      <header className="header-top-strip p-1 px-4 shadow-sm">
+      <header className="header-top-strip p-1 px-4 shadow-md">
         <div className="container xxl">
           <div className="row algin-items-center">
             <div className="col-6">
@@ -34,7 +36,7 @@ const header = () => {
         </div>
       </header>
 
-      <header className="header-upper">
+      <header className="header-upper px-3">
         <div className="container-xxl">
           <div className="row">
             <div className="col-2 m-auto text-center">
@@ -61,23 +63,23 @@ const header = () => {
               </div>
             </div>
 
-            <div className="nav-links-nav col-4 d-flex align-items-center justify-content-between m-auto text-center">
-              <Link to={"/"}>Home</Link>
+            <div className="nav-links col-4 d-flex align-items-center justify-content-between m-auto text-center">
+              <Link>Home</Link>
               <Link to={"shop"}>Shop</Link>
               <Link to={"blog"}>Blog</Link>
               <Link to={"about"}>About</Link>
               <Link to={"contact"}>Contact</Link>
             </div>
-            <div className="nav-link-nav col-3 d-flex align-items-center justify-content-around">
-              <Link className="d-flex">
+            <div className="nav-links-nav col-3 d-flex align-items-center justify-content-around">
+              <Link to={"wishlist"} className="d-flex">
                 <HiOutlineInbox className="fs-3 mx-2 " />
                 <p>Wishlist</p>
               </Link>
-              <Link className="d-flex">
+              <Link to={"login"}className="d-flex">
                 <VscAccount className="fs-3 mx-2 " />
                 <p>Account</p>
               </Link>
-              <Link className="d-flex">
+              <Link to={"cart"} className="d-flex">
                 <CgShoppingCart className="fs-3 mx-2 " />
                 <p>Cart</p>
               </Link>
