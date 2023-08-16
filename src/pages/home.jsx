@@ -2,7 +2,7 @@ import React from "react";
 //import { CgShoppingCart } from 'react-icons/cg'
 import { Link } from "react-router-dom";
 import Featuredproducts from "../components/featuredproducts";
-//import Newarrivals from '../components/newarrivals'
+import Newarrivals from '../components/newarrivals'
 //import banner from '../assets/images/banner/b17.jpg'
 //import banner1 from '../assets/images/banner/b10.jpg'
 //import blog1 from '../assets/images/blog/blog-1.jpg'
@@ -47,6 +47,30 @@ const home = () => {
           </div>
         </div>
       </section>
+
+      <section className="repair-services p-5">
+      <div className="container-xxl">
+        <div className="row ">
+          <div className="repair-details text-center align-items-center">
+            <h5 className='mb-3 text-white'>Repair Services</h5>
+            <h2 className='mb-3 text-white'>On 70% Off on All Products And Accessories</h2>
+            <button className="button-repair">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="new-products p-4">
+    <div className="container-xxl">
+      <div className="row">
+        <div className="d-flex align-items-center justify-content-center flex-column">
+          <h1>New Arrivals</h1>
+          <p>Your Best Designer Outfits</p>
+        </div>
+        <Newarrivals />
+      </div>
+    </div>
+  </section>
     </div>
   );
 };
