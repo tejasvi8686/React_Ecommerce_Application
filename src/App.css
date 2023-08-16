@@ -217,6 +217,28 @@ footer{
   color: var(--darken);
 }
 
+.hot-deals .card{
+  padding: 12px 10px;
+}
+
+.hot-deals .card img{
+  min-height: 180px;
+  justify-content: center;
+}
+
+.hot-deals button{
+  color: white;
+  background-color: var(--darker);
+  transition: 0.5s;
+  border:  1px solid transparent;
+}
+
+.hot-deals button:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
 
 
 
