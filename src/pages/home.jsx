@@ -1,7 +1,7 @@
 import React from "react";
 //import { CgShoppingCart } from 'react-icons/cg'
 import { Link } from "react-router-dom";
-//import Featuredproducts from '../components/featuredproducts';
+import Featuredproducts from "../components/featuredproducts";
 //import Newarrivals from '../components/newarrivals'
 //import banner from '../assets/images/banner/b17.jpg'
 //import banner1 from '../assets/images/banner/b10.jpg'
@@ -34,8 +34,19 @@ const home = () => {
         </div>
       </section>
 
+      <Hero />
 
-      <Hero/>
+      <section className="featured-products p-4">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1>Featured Products</h1>
+              <p>All Weather New Modern Designs</p>
+            </div>
+            <Featuredproducts/>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

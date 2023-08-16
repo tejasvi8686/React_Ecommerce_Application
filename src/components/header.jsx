@@ -131,7 +131,7 @@ const header = () => {
               <Link
                 to={"cart"}
                 className={
-                  location.pathname === "/cart" ? "not-active" : "active"
+                  location.pathname === "/" ? "not-active" : "active"
                 }
               >
                 <div className="d-flex">

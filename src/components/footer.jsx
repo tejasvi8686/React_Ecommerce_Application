@@ -128,7 +128,7 @@ const footer = () => {
             <p className="mb-3">
               Available On Google Play Services & App Store
             </p>
-            <div className="pay d-flex">
+            <div className="pay">
               <Link>
                 <img src={google} alt="" className="img-fluid p-4 my-3 " />
               </Link>
