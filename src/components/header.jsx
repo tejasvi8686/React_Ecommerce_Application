@@ -1,16 +1,14 @@
 import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
-//import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineMail } from "react-icons/ai";
 import logo from "../assets/images/apneck.png";
 import { HiOutlineInbox } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
 
-
 const header = () => {
- 
+  const location = useLocation();
   return (
     <>
       <header className="header-top-strip p-1 px-4 shadow-md">
@@ -41,7 +39,7 @@ const header = () => {
           <div className="row">
             <div className="col-2 m-auto text-center">
               <Link to="/">
-              <img src={logo} alt="" className="img-fluid logo" />
+                <img src={logo} alt="" className="img-fluid logo" />
               </Link>
             </div>
 
@@ -64,24 +62,84 @@ const header = () => {
             </div>
 
             <div className="nav-links col-4 d-flex align-items-center justify-content-between m-auto text-center">
-              <Link>Home</Link>
-              <Link to={"shop"}>Shop</Link>
-              <Link to={"blog"}>Blog</Link>
-              <Link to={"about"}>About</Link>
-              <Link to={"contact"}>Contact</Link>
+              <Link
+                to={"/"}
+                className={location.pathname === "/" ? "active" : "not-active"}
+              >
+                Home
+              </Link>
+              <Link
+                to={"shop"}
+                className={
+                  location.pathname === "/shop" ? "active" : "not-active"
+                }
+              >
+                Shop
+              </Link>
+              <Link
+                to={"blog"}
+                className={
+                  location.pathname === "/blog" ? "active" : "not-active"
+                }
+              >
+                Blog
+              </Link>
+              <Link
+                to={"about"}
+                className={
+                  location.pathname === "/about" ? "active" : "not-active"
+                }
+              >
+                About
+              </Link>
+              <Link
+                to={"contact"}
+                className={
+                  location.pathname === "/contact" ? "active" : "not-active"
+                }
+              >
+                Contact
+              </Link>
             </div>
             <div className="nav-links-nav col-3 d-flex align-items-center justify-content-around">
-              <Link to={"wishlist"} className="d-flex">
-                <HiOutlineInbox className="fs-3 mx-2 " />
-                <p>Wishlist</p>
+              <Link
+                to={"wishlist"}
+                className={
+                  location.pathname === "/wishlist" ? "not-active" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <span>
+                    <HiOutlineInbox className="fs-3 mx-2" />
+                  </span>
+                  <p>Wishlist</p>
+                </div>
               </Link>
-              <Link to={"login"}className="d-flex">
-                <VscAccount className="fs-3 mx-2 " />
-                <p>Account</p>
+              <Link
+                to={"login"}
+                className={
+                  location.pathname === "/login" ? "not-active" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <span>
+                    <VscAccount className="fs-3 mx-2" />
+                  </span>
+                  <p>Account</p>
+                </div>
               </Link>
-              <Link to={"cart"} className="d-flex">
-                <CgShoppingCart className="fs-3 mx-2 " />
-                <p>Cart</p>
+              <Link
+                to={"cart"}
+                className={
+                  location.pathname === "/cart" ? "not-active" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <span>
+                    <CgShoppingCart className="fs-3 mx-2" />
+                  </span>
+                  <p>Cart</p>
+                </div>
               </Link>
             </div>
           </div>
