@@ -11,7 +11,7 @@ const header = () => {
   const location = useLocation();
   return (
     <>
-      <header className="header-top-strip p-1 px-4 shadow-md">
+      <header className="header-top-strip p-1 px-4 shadow-md ">
         <div className="container xxl">
           <div className="row algin-items-center">
             <div className="col-6">
@@ -34,7 +34,7 @@ const header = () => {
         </div>
       </header>
 
-      <header className="header-upper px-3">
+      <header className="header-upper px-3 sticky-top">
         <div className="container-xxl">
           <div className="row">
             <div className="col-2 m-auto text-center">

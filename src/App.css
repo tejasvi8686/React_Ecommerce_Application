@@ -239,6 +239,27 @@ footer{
   border: 1px solid var(--darker);
 }
 
+.blogs .card img{
+  width: 20rem;
+  padding: 20px;
+  border-radius: 15px;
+}
+.blogs button{
+  font-size: 16px;
+  transition: 0.5s;
+  border:  1px solid transparent;
+}
+
+.blogs button:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darker);
+}
+
+.news-letter{
+  background-color: var(--lighter1);
+}
+
 
 
 
