@@ -31,4 +31,4 @@ Create a pull request with a detailed description of your changes
 
 # Deployment
 
-The website is deployed using Netlify. You can access it at: Apneck Website
+The website is deployed using Netlify. You can access it at: https://tejasviapneck.netlify.app
