@@ -8,6 +8,9 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import Cart from "./pages/cart";
 import Login from "./pages/login";
+import Signup from './pages/signup'
+import Checkout from './pages/checkout'
+import Forgotpasword from './pages/forgotpasword'
 import Wishlist from "./pages/wishlist";
 import "./App.css";
 import ShopContext from "./components/shopcontext";
@@ -26,7 +29,10 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route path="cart" element={<Cart />} />
               <Route path="login" element={<Login />} />
+              <Route path='signup' element={<Signup />} />
+              <Route path='forgotpasword' element={<Forgotpasword />} />
               <Route path="wishlist" element={<Wishlist />} />
+              <Route path='checkout' element={<Checkout />} />
               <Route path="details" element={<Details />} />
             </Route>
           </Routes>

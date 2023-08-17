@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import { CgShoppingCart } from 'react-icons/cg'
 import { Link } from 'react-router-dom';
