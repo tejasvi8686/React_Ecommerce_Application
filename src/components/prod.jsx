@@ -4,7 +4,7 @@ import React, { useContext} from 'react'
 import { ShopContext } from './shopcontext'
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
-//import Details from '../pages/details';
+import Details from '../pages/details';
 
 
 const prod = (props) => {
