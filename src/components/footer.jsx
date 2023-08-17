@@ -79,7 +79,7 @@ const footer = () => {
       <hr className='my-4' />
       <div className="row">
         <div className="col-12 col-md-6">
-        <p className="text-center text-md-start">&copy;Developed by Eclar Developers 2023</p>
+        <p className="text-center text-md-start">&copy;Developed by Tejasvi Raj Developers 2023</p>
         </div>
         <div className="col-12 col-md-6">
         <ul className="list-inline text-center text-md-end">
