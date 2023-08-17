@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import React from 'react'
 import b1 from '../assets/images/blog/b1.jpg'
 import b6 from '../assets/images/blog/b6.jpg'
