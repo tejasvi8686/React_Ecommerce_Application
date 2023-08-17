@@ -19,6 +19,7 @@ Apneck is a responsive full e-commerce website built using React. This repositor
 ## Technologies Used 🚀
 - React
 - React Router
+- Bootstrap
 
 ## Contributing 👥
 We welcome contributions from the community! If you find a bug or have an improvement idea, please follow these steps:
